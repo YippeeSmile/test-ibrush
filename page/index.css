@@ -92,4 +92,5 @@
 /*same-article*/
 
 @import url('../blocks/same-article/same-article.css');
+@import url('../blocks/same-article/__link/same-article__link.css');
 @import url('../blocks/same-article/__wrapper/same-article__wrapper.css');
