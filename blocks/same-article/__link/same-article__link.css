@@ -3,3 +3,7 @@
     cursor: pointer;
     color: #202326;
 }
+
+.same-article__link:hover {
+    color: rgba(32, 35, 38, 0.8);
+}
