@@ -1,0 +1,7 @@
+.stars-rating__items {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 10px;
+}

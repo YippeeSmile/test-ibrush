@@ -1,0 +1,11 @@
+.stars-rating__item {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.stars-rating__item:hover,
+.stars-rating__item:hover~.stars-rating__item {
+    color: rgba(255, 232, 16, 1);
+}

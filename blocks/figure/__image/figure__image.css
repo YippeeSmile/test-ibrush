@@ -1,0 +1,5 @@
+.figure__image {
+    object-fit: cover;
+    max-width: 738px;
+    width: 100%;
+}

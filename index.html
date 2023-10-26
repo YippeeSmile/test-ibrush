@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./page/index.css">
+    <title>Путь JavaScript</title>
+</head>
+
+<body class="page__body">
+    <header class="header">
+        <nav class="nav">
+            <a href="#"><img class="logo" src="./images/logo.svg" alt="логотип jscourses"></img>
+            </a>
+            <!--<img src="./images/icons/menu.svg" alt="значок меню">-->
+            <ul class="nav__list">
+                <div class="nav__close-icon"><img src="./images/icons/close.svg" alt="значок крестик" /></div>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Статьи<img class="nav__arrow-icon" src="/images/icons/arrow.svg" alt="стрелка"></a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Курсы<img class="nav__arrow-icon" src="/images/icons/arrow.svg" alt="стрелка"></a>
+                    <ul class="nav__submenu">
+                        <li><a class="nav__link">JavaScript Pro</a></li>
+                        <li><a class="nav__link">JavaScript для новчиков</a></li>
+                        <li><a class="nav__link">JavaScript ниндзя</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a class="nav__link">Новости</a></li>
+                <li class="nav__item"><a class="nav__link">О нас</a></li>
+            </ul>
+
+            <button class="button button_place_header">Начать учиться</button>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <h1 class="section__title section__title_big">Путь JavaScript</h1>
+            <figure class="figure">
+                <img src="./images/gallery-books.jpg" class="figure__image" alt="галерея книг">
+                <div class="figure__calendar">
+                    <p class="figure__calendar_date">12</p>
+                    <p class="figure__calendar_month">Апреля</p>
+                </div>
+                <figcaption class="figure__text">Можно выделить три основных направления для прогресса JavaScript </figcaption>
+            </figure>
+            <hr class="gallery__underline">
+        </section>
+        <section class="quote">
+            <h2 class="section__title section__title_medium">Серверный JavaScript</h2>
+            <div class="quote__wrapper">
+                <img class="quote__image" src="./images/quotation-mark.svg" alt="цитата">
+                <p class="quote__text">Разработчики и&nbsp;клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс и&nbsp;думают, что он&nbsp;и&nbsp;есть система. Они определяют систему в&nbsp;терминах графического интерфейса и&nbsp;считают, что
+                    должны сразу начать работу с&nbsp;графическим интерфейсом. Они не&nbsp;понимают важнейшего принципа: ввод/вывод не&nbsp;важен.
+                    <span class="quote__text_author">— Р. Мартин</span></p>
+            </div>
+        </section>
+        <section class="advert">
+            <div class="advert__wrapper">
+                <figure class="advert__figure">
+                    <img class="advert__image" src="./images/advertising.jpg" alt="рекламный блок" />
+                    <figcaption class="advert__figaption">Реклама на <a href="">blabla.com</a></figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="conclusion">
+            <h3 class="section__title section__title_small">Заключение</h3>
+            <p class="conclusion__text">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на&nbsp;то, что все эти характерологические
+                черты отсылают не&nbsp;к&nbsp;единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
+        </section>
+        <section class="rating">
+
+
+            <div class="rating__wrapper">
+                <h2 class="section__title section__title_medium">Что вы&nbsp;думаете об&nbsp;этой книге?</h2>
+
+
+                <div class="stars-rating">
+                    <h4 class="rating__subtitle">Оцените статью</h4>
+
+                    <div class="stars-rating_wrapper_flex">
+                        <p class="stars-rating__value" total-value="0">4</p>
+                        <ul class="stars-rating__items">
+                            <li class="stars-rating__item" value="5">★</li>
+                            <li class="stars-rating__item" value="4">★</li>
+                            <li class="stars-rating__item" value="3">★</li>
+                            <li class="stars-rating__item" value="2">★</li>
+                            <li class="stars-rating__item" value="1">★</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <h4 class="rating__subtitle">Добавить комментарий к&nbsp;книге</h4>
+                <form class="form">
+                    <div class="form__info">
+                        <input id="name" required name="name" type="text" placeholder="Имя" minlength="2" maxlength="10" class="form__input">
+                        <input id="email" required name="email" type="text" placeholder="Email" minlength="2" maxlength="20" class="form__input">
+                        <select name="books" class="form__input form__select">
+                    <option class="form__option">JavaScript ниндзя</option>
+                    <option class="form__option" selected>Pragmatic Guide to JavaScript</option>
+                    <option class="form__option" value="">Pro JavaScript Techniques</option>
+                    <option class="form__option" value="">Выразительный JavaScript</option>
+                  </select>
+                    </div>
+                    <textarea class="form__textarea" placeholder="Ваш отзыв"></textarea>
+                    <button class="button_place_form button" type="submit" class="button" value="Отправить">Отправить</button>
+                </form>
+            </div>
+        </section>
+        <section class="same-article">
+            <h2 class="section__title section__title_medium">Похожие посты</h2>
+            <div class="same-article__wrapper">
+                <article class="same-article__item">
+                    <a href="#">
+                        <img class="article__image" src="./images/imgreact.png" alt="логотип reactJS" />
+                        <p class="article__date">12 декабря</p>
+                        <h4 clas="article__title">События жизненного цикла ReactJS</h4>
+                    </a>
+                </article>
+                <article class="same-article__item">
+                    <img class="article__image" src="/images/css.jpg" alt="css grid" />
+                    <p class="article__date">10 декабря</p>
+                    <h4 clas="article__title">CSS Grids. Полное руководство</h4>
+                </article>
+                <article class="same-article__item">
+                    <img class="article__image" src="./images/js.jpg" alt="js лого" />
+                    <p class="article__date">5 декабря</p>
+                    <h4 clas="article__title">Асинхронность в&nbsp;JavaScript</h4>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

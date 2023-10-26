@@ -1,0 +1,9 @@
+.form {
+    display: i;
+    background: n;
+}
+
+.form:active {
+    border: linear-gradient(0deg, #2D1AA7, #2D1AA7);
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}

@@ -1,0 +1,5 @@
+.form__info {
+    justify-content: space-between;
+    max-width: 738px;
+    display: flex;
+}

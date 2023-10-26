@@ -1,0 +1,11 @@
+.nav__item {
+    /*padding: 1.4rem 0;*/
+    /* margin: 0 1.5rem; */
+    cursor: pointer;
+}
+
+.nav__item:hover .nav__submenu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
