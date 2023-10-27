@@ -1,9 +1,16 @@
 .form__select {
-    /* display: block; */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
     font-family: 'Onest', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
+    color: #202326;
     letter-spacing: 0px;
-    /* color: #202326; */
+}
+
+.form__select::-ms-expand {
+    display: none;
 }
