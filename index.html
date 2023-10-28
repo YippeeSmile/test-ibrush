@@ -11,34 +11,32 @@
 
 <body class="page__body">
     <header class="header">
-        <nav class="nav">
-            <a href="#"><img class="logo" src="./images/logo.svg" alt="логотип jscourses">
-            </a>
-            <!--<img src="./images/icons/menu.svg" alt="значок меню" class="nav__icon_burger">-->
-            <div class="nav__wrapper">
-                <img src="./images/icons/close.svg" alt="значок крестик" class="nav__icon_close">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Статьи<img class="nav__arrow-icon" src="/images/icons/arrow.svg" alt="стрелка"></a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Курсы<img class="nav__arrow-icon" src="/images/icons/arrow.svg" alt="стрелка"></a>
-                        <ul class="nav__submenu">
-                            <li><a class="nav__link">JavaScript Pro</a></li>
-                            <li><a class="nav__link">JavaScript для новчиков</a></li>
-                            <li><a class="nav__link">JavaScript ниндзя</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item"><a class="nav__link">Новости</a></li>
-                    <li class="nav__item"><a class="nav__link">О нас</a></li>
-                </ul>
-            </div>
+        <a href="#"><img class="logo" src="./images/logo.svg" alt="логотип jscourses">
+        </a>
+        <img src="./images/icons/menu.svg" alt="меню бургер" class="nav__icon_burger">
+        <!--<img src="./images/icons/close.svg" alt="значок крестик" class="nav__icon_close">-->
+        <div class="nav__burger">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Статьи<img class="nav__arrow-icon" src="/images/icons/arrow.svg" alt="стрелка"></a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Курсы<img class="nav__arrow-icon" src="/images/icons/arrow.svg" alt="стрелка"></a>
+                    <ul class="nav__submenu">
+                        <li><a class="nav__link">JavaScript Pro</a></li>
+                        <li><a class="nav__link">JavaScript для новчиков</a></li>
+                        <li><a class="nav__link">JavaScript ниндзя</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a class="nav__link">Новости</a></li>
+                <li class="nav__item"><a class="nav__link">О нас</a></li>
+            </ul>
             <button class="button button_place_header">Начать учиться</button>
-        </nav>
+        </div>
     </header>
     <main>
         <section class="gallery">
-            <h1 class="section__title section__title_big">Путь JavaScript</h1>
+            <h1 class="gallery__title">Путь JavaScript</h1>
             <figure class="figure">
                 <img src="./images/gallery-books.jpg" class="figure__image" alt="галерея книг">
                 <div class="figure__calendar">

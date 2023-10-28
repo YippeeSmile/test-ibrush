@@ -1,0 +1,12 @@
+.nav__burger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .nav__burger {
+        display: none;
+    }
+}

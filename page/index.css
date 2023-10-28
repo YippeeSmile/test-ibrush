@@ -9,6 +9,8 @@
 /*nav */
 
 @import url('../blocks/nav/nav.css');
+@import url('../blocks/nav/__burger/nav__burger.css');
+@import url('../blocks/nav/__icon/_burger/nav__icon_burger.css');
 @import url('../blocks/nav/__list/nav__list.css');
 @import url('../blocks/nav/__link/nav__link.css');
 @import url('../blocks/nav/__arrow-icon/nav__arrow-icon.css');
@@ -37,6 +39,7 @@
 /*section gallery*/
 
 @import url('../blocks/gallery/gallery.css');
+@import url('../blocks/gallery/__title/gallery__title.css');
 @import url('../blocks/figure/figure.css');
 @import url('../blocks/figure/__image/figure__image.css');
 @import url('../blocks/figure/__text/figure__text.css');
@@ -92,6 +95,7 @@
 /*same-article*/
 
 @import url('../blocks/same-articles/same-articles.css');
+@import url('../blocks/same-article/same-article.css');
 @import url('../blocks/same-article/__date/same-article__date.css');
 @import url('../blocks/same-article/__image/same-article__image.css');
 @import url('../blocks/same-article/__link/same-article__link.css');
