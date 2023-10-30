@@ -1,5 +1,6 @@
 .same-articles {
     margin: 0 auto;
     max-width: 738px;
-    padding-bottom: 50px;
+    width: 100%;
+    padding: 50px 0;
 }

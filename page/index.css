@@ -62,7 +62,7 @@
 
 @import url('../blocks/advert/advert.css');
 @import url('../blocks/advert/__wrapper/advert__wrapper.css');
-@import url('../blocks/advert/__image/figure__image.css');
+@import url('../blocks/advert/__image/advert__image.css');
 @import url('../blocks/advert/__figure/advert__figure.css');
 @import url('../blocks/advert/__figaption/advert__figaption.css');
 
