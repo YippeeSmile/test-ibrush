@@ -77,11 +77,8 @@
 
             <div class="rating__wrapper">
                 <h2 class="section__title section__title_medium">Что вы&nbsp;думаете об&nbsp;этой книге?</h2>
-
-
                 <div class="stars-rating">
                     <h4 class="rating__subtitle">Оцените статью</h4>
-
                     <div class="stars-rating_wrapper_flex">
                         <p class="stars-rating__value" total-value="0">4</p>
                         <ul class="stars-rating__items">
@@ -92,15 +89,14 @@
                             <li class="stars-rating__item" value="1">★</li>
                         </ul>
                     </div>
-
-
                 </div>
                 <h4 class="rating__subtitle">Добавить комментарий к&nbsp;книге</h4>
                 <form class="form" id="form-comment">
                     <div class="form__info">
                         <input id="name" required name="name" type="text" placeholder="Имя" minlength="2" maxlength="10" class="form__input">
                         <input id="email" required name="email" type="text" placeholder="Email" minlength="2" maxlength="20" class="form__input">
-                        <select name="books" class="form__select">
+                        <select id="books" name="books" class="form__select">
+                            <label for="books" class="form__select_label"></label>
                     <option class="form__option" value="">Выберите книгу</option>
                     <option class="form__option" value="JavaScript ниндзя">JavaScript ниндзя</option>
                     <option class="form__option" value="Pragmatic Guide to JavaScript">Pragmatic Guide to JavaScript</option>

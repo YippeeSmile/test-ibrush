@@ -2,10 +2,13 @@
     display: flex;
     justify-content: space-between;
     /* max-width: 738px; */
+    flex-wrap: e;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
     .form__info {
         flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 }
