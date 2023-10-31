@@ -7,3 +7,9 @@
     /* justify-content: space-between; */
     justify-self: auto;
 }
+
+@media screen and (max-width: 650px) {
+    .nav__list {
+        display: none;
+    }
+}
