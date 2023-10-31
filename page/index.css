@@ -103,3 +103,16 @@
 @import url('../blocks/same-article/__link/same-article__link.css');
 @import url('../blocks/same-article/__title/same-article__title.css');
 @import url('../blocks/same-article/__wrapper/same-article__wrapper.css');
+
+/*popup*/
+
+@import url('../blocks/popup/popup.css');
+@import url('../blocks/popup/__container/popup__container.css');
+@import url('../blocks/popup/__title/popup__title.css');
+@import url('../blocks/popup/__subtitle/popup__subtitle.css');
+@import url('../blocks/popup/__form/popup__form.css');
+@import url('../blocks/popup/__input/popup__input.css');
+@import url('../blocks/popup/__close/popup__close_button.css');
+@import url('../blocks/popup/__save-button/popup__save-button.css');
+@import url('../blocks/popup/__text-privacy/popup__text-privacy.css');
+@import url('../blocks/popup/__link/popup__link.css');

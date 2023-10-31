@@ -137,7 +137,7 @@
         </section>
         <section class="popup popup_request">
             <div class="popup__container">
-                <button class="popup__close"></button>
+                <button class="popup__close_button"><img src="./images/icons/close.svg"></button>
                 <h2 class="popup__title">Начать учиться</h2>
                 <h3 class="popup__subtitle">Оставьте заявку и&nbsp;наш менеджер вам перезвонит.</h3>
                 <form class="popup__form" name="profile-form" novalidate>
@@ -145,8 +145,9 @@
                     <span id="username-error" class="error-message error-message_visible"></span>
                     <input id="usertext" required name="email" value="" placeholder="E-mail" minlength="2" maxlength="200" class="popup__input popup__input_email">
                     <span id="usertext-error" class="error-message error-message_visible"></span>
-                    <button type="submit" class="popup__save-button" value="Отправить">Отправить</button>
+                    <button type="submit" class="button popup__save-button" value="Отправить">Отправить</button>
                 </form>
+                <p class="popup__text-privacy">Нажимая кнопку «Отправить», вы соглашаетесь с <a class="popup__link">политикой конфиденциальности</a></p>
             </div>
         </section>
     </main>
