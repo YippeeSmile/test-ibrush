@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./page/index.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Путь JavaScript</title>
 </head>
 
@@ -13,9 +13,8 @@
     <header class="header">
         <a href="#"><img class="logo" src="./images/logo.svg" alt="логотип jscourses">
         </a>
-        <img src="./images/icons/menu.svg" alt="меню бургер" class="nav__icon_burger">
-        <!--<img src="./images/icons/close.svg" alt="значок крестик" class="nav__icon_close">-->
-        <div class="nav__burger">
+        <img src="./images/icons/menu.svg" alt="меню бургер" class="icon_burger">
+        <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item">
                     <a class="nav__link" href="#">Статьи<img class="nav__arrow-icon" src="./images/icons/arrow.svg" alt="стрелка"></a>
@@ -32,11 +31,11 @@
                 <li class="nav__item"><a class="nav__link">О нас</a></li>
             </ul>
             <button class="button button_place_header">Начать учиться</button>
-        </div>
+            </div>
     </header>
     <main>
         <section class="gallery">
-            <h1 class="gallery__title">Путь JavaScript</h1>
+            <h1 class="title title_big">Путь JavaScript</h1>
             <figure class="figure">
                 <img src="./images/gallery-books.jpg" class="figure__image" alt="галерея книг">
                 <div class="figure__calendar">
@@ -68,18 +67,18 @@
             </div>
         </section>
         <section class="conclusion">
-            <h3 class="section__title section__title_small">Заключение</h3>
+            <h3 class="title title_small">Заключение</h3>
             <p class="conclusion__text">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на&nbsp;то, что все эти характерологические
                 черты отсылают не&nbsp;к&nbsp;единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
         </section>
+        <!--
         <section class="rating">
-
-
             <div class="rating__wrapper">
-                <h2 class="section__title section__title_medium">Что вы&nbsp;думаете об&nbsp;этой книге?</h2>
+                <h2 class="title title_medium rating__title">Что вы&nbsp;думаете об&nbsp;этой книге?</h2>
+              
                 <div class="stars-rating">
                     <h4 class="rating__subtitle">Оцените статью</h4>
-                    <div class="stars-rating_wrapper_flex">
+                    <div class="stars-rating__wrapper">
                         <p class="stars-rating__value">4</p>
                         <ul class="stars-rating__items">
                             <li class="stars-rating__item" value="5">★</li>
@@ -90,55 +89,61 @@
                         </ul>
                     </div>
                 </div>
+
+               
                 <h4 class="rating__subtitle">Добавить комментарий к&nbsp;книге</h4>
+
                 <form class="form" id="form-comment">
                     <div class="form__info">
                         <input id="name" required name="name" type="text" placeholder="Имя" minlength="2" maxlength="10" class="form__input">
                         <input id="email" required name="email" type="text" placeholder="Email" minlength="2" maxlength="20" class="form__input">
-                        <select id="books" name="books" class="form__select">
-                    <option class="form__option" value="">Выберите книгу</option>
-                    <option class="form__option" value="JavaScript ниндзя">JavaScript ниндзя</option>
-                    <option class="form__option" value="Pragmatic Guide to JavaScript">Pragmatic Guide to JavaScript</option>
-                    <option class="form__option" value="Pro JavaScript Techniques">Pro JavaScript Techniques</option>
-                    <option class="form__option" value="Выразительный JavaScript">Выразительный JavaScript</option>
-                  </select>
+                        <div class="form__select">
+                            <input class="form__option" type="radio" value="" checked />
+                            <label for="singleSelect0" class="__select__label">Выберите книгу</label>
+                            <input class="form__option" value="JavaScript ниндзя">JavaScript ниндзя</input>
+                            <input class="form__option" value="Pragmatic Guide to JavaScript">Pragmatic Guide to JavaScript</input>
+                            <input class="form__option" value="Pro JavaScript Techniques">Pro JavaScript Techniques</input>
+                            <input class="form__option" value="Выразительный JavaScript">Выразительный JavaScript</input>
+                        </div>
                     </div>
                     <textarea class="form__textarea" placeholder="Ваш отзыв"></textarea>
                     <button class="button_place_form button" type="submit" value="Отправить">Отправить</button>
                 </form>
             </div>
         </section>
-        <section class="same-articles">
-            <h2 class="section__title section__title_medium">Похожие посты</h2>
+
+          -->
+        <section class="same-article">
+            <h2 class="title title_medium">Похожие посты</h2>
             <div class="same-article__wrapper">
-                <article class="same-article">
-                    <a class="same-article__link">
-                        <img class="same-article__image" src="./images/imgreact.png" alt="логотип reactJS">
-                        <p class="same-article__date">12 декабря</p>
-                        <h4 class="same-article__title">События жизненного цикла ReactJS</h4>
+                <article class="same-articles__card">
+                    <a class="same-articles__card-link">
+                        <img class="same-article__card-image" src="./images/imgreact.png" alt="логотип reactJS">
+                        <p class="same-article__card-date">12 декабря</p>
+                        <h4 class="same-article__card-title">События жизненного цикла ReactJS</h4>
                     </a>
                 </article>
-                <article class="same-article">
+                <article class="same-article__card">
                     <a class="same-article__link">
-                        <img class="same-article__image" src="./images/css.jpg" alt="css grid">
-                        <p class="same-article__date">10 декабря</p>
-                        <h4 class="same-article__title">CSS Grids. Полное руководство</h4>
+                        <img class="same-article__card-image" src="./images/css.jpg" alt="css grid">
+                        <p class="same-article__card-date">10 декабря</p>
+                        <h4 class="same-article__card-title">CSS Grids. Полное руководство</h4>
                     </a>
                 </article>
-                <article class="same-article">
-                    <a class="same-article__link">
-                        <img class="same-article__image" src="./images/js.jpg" alt="js лого">
-                        <p class="same-article__date">5 декабря</p>
-                        <h4 class="same-article__title">Асинхронность в&nbsp;JavaScript</h4>
+                <article class="same-article__card">
+                    <a class="same-article__card-link">
+                        <img class="same-article__card-image" src="./images/js.jpg" alt="js лого">
+                        <p class="same-article__card-date">5 декабря</p>
+                        <h4 class="same-article__card-title">Асинхронность в&nbsp;JavaScript</h4>
                     </a>
                 </article>
             </div>
         </section>
-        <section class="popup popup_request">
+        <section class="popup">
             <div class="popup__container">
-                <button class="popup__close_button"><img src="./images/icons/close.svg" alt="крестик"></button>
-                <h2 class="popup__title">Начать учиться</h2>
-                <h3 class="popup__subtitle">Оставьте заявку и&nbsp;наш менеджер вам перезвонит.</h3>
+                <button class="popup__close-button"><img src="./images/icons/close.svg" alt="крестик"></button>
+                <h2 class="title title_small popup__title">Начать учиться</h2>
+                <h3 class="title popup__subtitle">Оставьте заявку и&nbsp;наш менеджер вам перезвонит.</h3>
                 <form class="popup__form" name="profile-form" novalidate>
                     <input type="text" id="username" required name="username" value="" placeholder="Как вас зовут" minlength="2" maxlength="40" class="popup__input popup__input_name">
                     <span id="username-error" class="error-message error-message_visible"></span>
@@ -149,6 +154,7 @@
                 <p class="popup__text-privacy">Нажимая кнопку «Отправить», вы соглашаетесь с <a class="popup__link">политикой конфиденциальности</a></p>
             </div>
         </section>
+
     </main>
     <script src="./scripts/index.js"></script>
 </body>

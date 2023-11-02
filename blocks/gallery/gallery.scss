@@ -1,0 +1,23 @@
+.gallery {
+    margin: 0 auto;
+    max-width: 738px;
+    padding-top: 50px;
+    &__title {
+        margin: 30px 0 0;
+    }
+    &__underline {
+        height: 2px;
+        background-color: #ECECF3;
+        margin-top: 79px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .gallery__title {
+        margin: 0 auto;
+        font-family: 'Onest', sans-serif;
+        font-size: 34px;
+        line-height: 38px;
+    }
+}

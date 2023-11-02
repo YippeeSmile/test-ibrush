@@ -1,0 +1,45 @@
+.quote {
+    margin: 0 auto;
+    max-width: 738px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    &__container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    &__text {
+        padding: 0;
+        margin: 0;
+        max-width: 680px;
+        font-family: 'Onest', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 31px;
+        letter-spacing: 0em;
+        color: #202326;
+        &_author {
+            padding-top: 28px;
+            font-family: 'Onest', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            color: #777777;
+            display: table;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .quote__container {
+        flex-direction: column;
+    }
+}

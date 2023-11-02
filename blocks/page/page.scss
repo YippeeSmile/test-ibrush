@@ -1,0 +1,12 @@
+.page {
+    margin: 0 auto;
+    font-family: 'Onest', 'sans-serif';
+    background-color: #F8F8FA;
+    &__body {
+        margin: 0 auto;
+        padding: 0 20px;
+        min-width: 320px;
+        max-width: 1240px;
+        box-sizing: border-box;
+    }
+}
