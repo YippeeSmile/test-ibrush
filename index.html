@@ -74,7 +74,6 @@
         <section class="rating-and-comment">
             <div class="rating-and-comment__wrapper">
                 <h2 class="title title_medium rating-and-comment__title">Что вы&nbsp;думаете об&nbsp;этой книге?</h2>
-                <!--блок рейтинг-->
                 <fieldset class="rating">
                     <legend class="rating__caption">Оцените статью</legend>
                     <div class="rating__container">
@@ -93,19 +92,20 @@
                     <div class="form__info-container">
                         <input id="name" required name="name" type="text" placeholder="Имя" minlength="2" maxlength="10" class="form__input">
                         <input id="email" required name="email" type="text" placeholder="Email" minlength="2" maxlength="20" class="form__input">
-                        <div class="form__select">
-                            <input class="form__option" type="radio" value="" checked />
-                            <label for="singleSelect0" class="__select__label">Выберите книгу</label>
-                            <input class="form__option" value="JavaScript ниндзя">JavaScript ниндзя</input>
-                            <input class="form__option" value="Pragmatic Guide to JavaScript">Pragmatic Guide to JavaScript</input>
-                            <input class="form__option" value="Pro JavaScript Techniques">Pro JavaScript Techniques</input>
-                            <input class="form__option" value="Выразительный JavaScript">Выразительный JavaScript</input>
+                        <div class="select-wrapper">
+                            <select class="select" name="select-category" id="">
+                            <label for="select-category" class="select__label">Выберите книгу</label>
+                            <option class="select__option" value="JavaScript ниндзя">JavaScript ниндзя</option>
+                            <option class="select__option" value="Pragmatic Guide to JavaScript">Pragmatic Guide to JavaScript</option>
+                            <option class="select__option" value="Pro JavaScript Techniques">Pro JavaScript Techniques</option>
+                            <option class="select__option" value="Выразительный JavaScript">Выразительный JavaScript</option>
                         </div>
-                    </div>
-                    <textarea class="form__textarea" placeholder="Ваш отзыв"></textarea>
-                    <button class="button_place_form button" type="submit" value="Отправить">Отправить</button>
+                    </select>
+                        </div>
+                        <textarea class="form__textarea" placeholder="Ваш отзыв"></textarea>
+                        <button class="button_place_form button" type="submit" value="Отправить">Отправить</button>
                 </form>
-            </div>
+                </div>
         </section>
         <section class="same-article">
             <h2 class="title title_medium">Похожие посты</h2>
