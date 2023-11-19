@@ -1,20 +1,36 @@
 {
-  "name": "test-ibrush",
-  "version": "1.0.0",
-  "description": "Тестовое задание [Ссылка на макеты](https://www.figma.com/file/Pqr5ItL4NrA9JFxXkHwOpt/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%BD%D0%B0-%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D1%83-2.0-(%D0%BE%D0%BA%D1%82-23)?type=design&node-id=3112-411&mode=design&t=8CjX3iUGKP28agzb-0)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YippeeSmile/test-ibrush.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/YippeeSmile/test-ibrush/issues"
-  },
-  "homepage": "https://github.com/YippeeSmile/test-ibrush#readme"
+    "name": "test-ibrush",
+    "version": "1.0.0",
+    "description": "Тестовое задание [Ссылка на макеты](https://www.figma.com/file/Pqr5ItL4NrA9JFxXkHwOpt/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%BD%D0%B0-%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D1%83-2.0-(%D0%BE%D0%BA%D1%82-23)?type=design&node-id=3112-411&mode=design&t=8CjX3iUGKP28agzb-0)",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack serve",
+        "build-dev": "webpack",
+        "build-prod": "webpack --node-env=production",
+        "clear": "rd /s /q dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/YippeeSmile/test-ibrush.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/YippeeSmile/test-ibrush/issues"
+    },
+    "homepage": "https://github.com/YippeeSmile/test-ibrush#readme",
+    "devDependencies": {
+        "babel-loader": "^9.1.3",
+        "clean-webpack-plugin": "^4.0.0",
+        "css-loader": "^6.8.1",
+        "html-webpack-plugin": "^5.5.3",
+        "mini-css-extract-plugin": "^2.7.6",
+        "sass": "^1.69.5",
+        "sass-loader": "^13.3.2",
+        "style-loader": "^3.3.3",
+        "webpack": "^5.89.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^4.15.1"
+    }
 }
