@@ -33,17 +33,18 @@ module.exports = {
                 exclude: '/node_modules/'
             },
             {
-                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                test: /\.woff2?$/i,
                 type: 'asset/resource',
                 generator: {
                     filename: 'fonts/[name].[hash][ext]',
                 }
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/,
+                test: /\.(png|svg|jpe?g|gif|svg)$/,
+                loader: 'file-loader',
                 type: 'asset/resource',
-                generator: {
-                    filename: 'image/[name].[hash][ext]',
+                options: {
+                    name: 'assets/[name].[ext]',
                 }
             },
             {
