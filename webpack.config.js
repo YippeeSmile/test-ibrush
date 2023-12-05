@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const mode = process.env.NODE_ENV || 'development';
 const devMode = mode === 'development';
@@ -20,6 +21,11 @@ module.exports = {
         filename: 'index.[contenthash].js',
         publicPath: ''
     },
+    /*resolve: {
+        alias: {
+            images: path.resolve(__dirname, 'src/images/'),
+        },
+    },*/
     devServer: {
         static: path.resolve(__dirname, 'dist'),
         compress: true,
@@ -68,5 +74,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
         }),
+        new CopyPlugin({
+            patterns: [{
+                from: path.resolve(__dirname, 'src/images'),
+                to: path.resolve(__dirname, 'dist/images')
+            }]
+        })
     ]
 };
