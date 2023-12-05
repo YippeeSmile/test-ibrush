@@ -13,7 +13,6 @@ module.exports = {
     mode,
     target,
     devtool,
-    //mode: 'development',
     entry: path.resolve(__dirname, 'src/pages', 'index.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -21,11 +20,6 @@ module.exports = {
         filename: 'index.[contenthash].js',
         publicPath: ''
     },
-    /*resolve: {
-        alias: {
-            images: path.resolve(__dirname, 'src/images/'),
-        },
-    },*/
     devServer: {
         static: path.resolve(__dirname, 'dist'),
         compress: true,
