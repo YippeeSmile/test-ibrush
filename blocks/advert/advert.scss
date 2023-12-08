@@ -1,0 +1,39 @@
+.advert {
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #F1F1F3;
+    /* background-size: 1025px; */
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__image {
+        /*max-width: 610px;*/
+        width: 100%;
+        object-fit: cover;
+    }
+    &__figure {
+        margin: 0;
+        padding: 50px 0 70px;
+        /*max-width: 1024px;*/
+        max-width: 100vw;
+    }
+    &__figaption {
+        font-family: Onest;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #202326;
+        & a {
+            font-family: Helvetica;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #2D1AA7;
+        }
+    }
+}
