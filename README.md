@@ -1,4 +1,4 @@
-# [Test-i-brush](https://yippeesmile.github.io/test-ibrush/src) 
+# [Test-i-brush](https://yippeesmile.github.io/test-ibrush) 
 
 **Установка и запуск проекта:**
 
