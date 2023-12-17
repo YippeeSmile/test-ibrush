@@ -9,6 +9,7 @@
         color: #202326;
     }
     &__info-container {
+        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
